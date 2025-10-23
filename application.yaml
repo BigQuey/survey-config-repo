@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: survey-config-repo
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: "*"
+  endpoint:
+    health:
+      show-details: always
+
+logging:
+  level:
+    root: INFO
+    org.springframework.web: DEBUG
+    com.survey: DEBUG
