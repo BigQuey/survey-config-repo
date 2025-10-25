@@ -3,7 +3,7 @@ server:
 
 spring:
   application:
-    name: surveys-service
+    name: survey-service
   datasource:
     url: jdbc:mysql://172.17.0.2:3306/survey_db?createDatabaseIfNotExist=true
     username: root
