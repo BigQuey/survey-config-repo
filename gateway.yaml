@@ -23,6 +23,11 @@ spring:
           uri: lb://question-service
           predicates:
             - Path=/api/questions/**
+        - id: responses-service
+          uri: lb://responses-service
+          predicates:
+            - Path=/api/responses/**
+
   main:
     web-application-type: reactive
 
