@@ -27,6 +27,11 @@ spring:
           uri: lb://responses-service
           predicates:
             - Path=/api/responses/**
+        - id: Reportes-service
+          uri: lb://Reportes-service
+          predicates:
+            - Path=/api/statistics/**
+
 
   main:
     web-application-type: reactive
